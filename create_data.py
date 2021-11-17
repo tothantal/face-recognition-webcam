@@ -12,7 +12,10 @@ if not os.path.exists(datasets):
  
  
 # These are sub data sets of folder,
-sub_data = 'Person1'
+if len(sys.argv) > 1:
+	sub_data = sys.argv[1]
+else:
+	sub_data = 'Person'
  
 path = os.path.join(datasets, sub_data)
 if not os.path.isdir(path):
