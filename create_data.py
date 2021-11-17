@@ -7,12 +7,12 @@ haar_file = 'haarcascade_frontalface_default.xml'
 # All the faces data will be
 #  present this folder
 datasets = 'datasets' 
+if not os.path.exists(datasets):
+    os.makedirs(datasets)
  
  
 # These are sub data sets of folder,
-# for my faces I've used my name you can
-# change the label here
-sub_data = 'Recognised Person'    
+sub_data = 'Person1'
  
 path = os.path.join(datasets, sub_data)
 if not os.path.isdir(path):
