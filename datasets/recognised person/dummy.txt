@@ -1,2 +1,0 @@
-This is a dummy file.
-It is here to make sure datasets/recognised_person exists
